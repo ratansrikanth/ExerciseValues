@@ -8,9 +8,10 @@ import org.openqa.selenium.WebDriver;
 import pages.ExercisePage;
 import pages.Utils;
 
+import java.util.List;
+
 public class ExerciseSteps {
 
-    WebDriver driver;
     ExercisePage exercisePage;
     Utils utils;
 
@@ -27,11 +28,12 @@ public class ExerciseSteps {
 
     @When("values are entered in the input boxes")
     public void values_are_entered_in_the_input_boxes(DataTable dataTable) {
-
+        List<String> strValues = dataTable.asList();
+        exercisePage.enterValueEqualsToGivenValue(strValues);
     }
 
     @Then("validate the total count of the values is {double}")
-    public void validate_the_total_count_of_the_values_is(Double double1) {
-
+    public void validate_the_total_count_of_the_values_is(Double total) {
+        exercisePage.sumOfTotalValuesMatches(total);
     }
 }

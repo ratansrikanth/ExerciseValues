@@ -15,39 +15,39 @@ public class ExerciseLocators {
     }
 
     @FindBy(id = "lbl_val_1")
-    WebElement lbl_value1;
+    public WebElement lbl_value1;
 
     @FindBy(id = "lbl_val_2")
-    WebElement lbl_value2;
+    public WebElement lbl_value2;
 
     @FindBy(id = "lbl_val_3")
-    WebElement lbl_value3;
+    public WebElement lbl_value3;
 
     @FindBy(id = "lbl_val_4")
-    WebElement lbl_value4;
+    public WebElement lbl_value4;
 
     @FindBy(id = "lbl_val_5")
-    WebElement lbl_value5;
+    public WebElement lbl_value5;
 
     @FindBy(id = "txt_val_1")
-    WebElement txt_value1;
+    public WebElement txt_value1;
 
     @FindBy(id = "txt_val_2")
-    WebElement txt_value2;
+    public WebElement txt_value2;
 
     @FindBy(id = "txt_val_3")
-    WebElement txt_value3;
+    public WebElement txt_value3;
 
     @FindBy(id = "txt_val_4")
-    WebElement txt_value4;
+    public WebElement txt_value4;
 
     @FindBy(id = "txt_val_5")
-    WebElement txt_value5;
+    public WebElement txt_value5;
 
     @FindBy(id = "lbl_ttl_val")
-    WebElement lbl_total_value;
+    public WebElement lbl_total_value;
 
     @FindBy(id = "txt_ttl_val")
-    WebElement txt_total_value;
+    public WebElement txt_total_value;
 
 }
