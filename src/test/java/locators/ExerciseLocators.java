@@ -9,9 +9,9 @@ public class ExerciseLocators {
 
     WebDriver driver;
 
-    public ExerciseLocators(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver,this);
+    public ExerciseLocators(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "lbl_val_1")
