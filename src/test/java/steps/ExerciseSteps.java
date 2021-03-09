@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import pages.ExercisePage;
 import pages.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ExerciseSteps {
@@ -28,7 +29,8 @@ public class ExerciseSteps {
 
     @When("values are entered in the input boxes")
     public void values_are_entered_in_the_input_boxes(DataTable dataTable) {
-        List<String> strValues = dataTable.asList();
+        List<String> strValues = new ArrayList<String>();
+        strValues = dataTable.asList(String.class);
         exercisePage.enterValueEqualsToGivenValue(strValues);
     }
 
