@@ -34,8 +34,8 @@ public class ExerciseSteps {
         exercisePage.enterValueEqualsToGivenValue(strValues);
     }
 
-    @Then("validate the total count of the values is {double}")
-    public void validate_the_total_count_of_the_values_is(Double total) {
+    @Then("validate the sum of the values is {double}")
+    public void validate_the_sum_of_the_values_is(Double total) {
         exercisePage.sumOfTotalValuesMatches(total);
     }
 }
